@@ -302,3 +302,15 @@ function each(coll, f) {
     });
     return acc;
   }
+
+
+    each(restos,function(e){ 
+           
+$('#resto').append(`<h1>${e.name}</h1>`)
+        $('#resto').append('<br>')
+      
+    $('#resto').append(`<h2>${e.category}</h2>`)
+  $('#resto').append('<br>')
+   $('#resto').append(`<h2>${e.adresse}</h2>`)
+        $('#resto').append('<br>')
+})
